@@ -10,7 +10,7 @@
 
     <title>WordCamp San Antonio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" id="home">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
@@ -51,7 +51,7 @@
 
 
 <div class="mt-5">
-  <button type="button" class="btn btn-secondary btn-lg">Register Now</button>
+  <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
   <a class="btn btn-light btn-lg" href="#speakers">See Speakers</a>
 </div>
 
@@ -159,54 +159,54 @@
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
       <span class="badge badge-pill badge-info p-2">9:00am</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Jennifer Hunt</p>
   </li>
 <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
+      <span class="badge badge-pill badge-info p-2">10:00am</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
-  </li>
-
-<li class="list-group-item">
-    <div class="d-flex justify-content-between">
-      <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
-    </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Joshua Hall</p>
   </li>
 
 <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
+      <span class="badge badge-pill badge-info p-2">11:00am</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Marcus Ledger</p>
   </li>
 
 <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
+      <span class="badge badge-pill badge-info p-2">12:00pm</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Mina Sharpe</p>
   </li>
 
 <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
+      <span class="badge badge-pill badge-info p-2">1:00pm</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Terry Kane</p>
   </li>
 
 <li class="list-group-item">
     <div class="d-flex justify-content-between">
       <h5 class="mb-1">Keynote: WordPress 5.0</h5>
-      <span class="badge badge-pill badge-info p-2">9:00am</span>
+      <span class="badge badge-pill badge-info p-2">2:00pm</span>
     </div>
-    <p class="mb-1">Speaker Name</p>
+    <p class="mb-1">Olivia Hunt</p>
+  </li>
+
+<li class="list-group-item">
+    <div class="d-flex justify-content-between">
+      <h5 class="mb-1">WordCamp Questionnaire</h5>
+      <span class="badge badge-pill badge-info p-2">3:00pm</span>
+    </div>
+    <p class="mb-1">All Speakers</p>
   </li>
 </ul>
 <!-- /schedule -->
@@ -231,7 +231,28 @@
 </div>
 <hr>
 
-<button type="button" class="btn btn-primary btn-lg">Don't Miss Out, Register Now</button> 
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button> 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- /signup form -->
 <!-- footer -->
   <div class="row py-3">
@@ -252,6 +273,7 @@
     <!-- Dropdown menu links -->
   </div>
 </div>
+        
         </li>
       </ul>
     </div>
@@ -259,6 +281,7 @@
       <small>&copy; 2019 WordCamp &amp; Northwest Vista College</small>
     </div>
   </div>
+
 <!-- /footer -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
