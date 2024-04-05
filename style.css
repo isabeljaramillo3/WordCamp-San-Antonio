@@ -5,3 +5,8 @@
   transform: translate(-50%, -50%);
   padding: 10px;
 }
+
+html {
+  background: url(wordpress.jpg);
+  background-size: 300px 100px;
+}
